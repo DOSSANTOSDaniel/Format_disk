@@ -3,7 +3,7 @@
 # TITRE: DanyAtomic
 #================================================================#
 # DESCRIPTION:
-# Ce script va nous permettre de formater des périferiques en
+# Ce script va nous permettre de formater des périphériques en
 # Fat32, NTFS et Ext4.
 #----------------------------------------------------------------#
 # AUTEURS:
@@ -14,9 +14,9 @@
 # USAGE: ./danyatomic.sh
 #----------------------------------------------------------------#
 # NOTES:
-# Les differents testes intégré au programme:
-# Teste si un champ saissie par l'utilisateur est vide.
-# Teste si l'utilisateur a saissie un champ valide.
+# Les différends tests intégrés au programme :
+#  * Teste si un champ saisi par l'utilisateur est vide.
+#  * Teste si l'utilisateur a saisi un champ valide.
 #----------------------------------------------------------------#
 # BASH VERSION: GNU bash 4.4.12
 #================================================================#
