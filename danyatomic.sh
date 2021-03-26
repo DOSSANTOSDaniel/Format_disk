@@ -25,7 +25,7 @@ zenity --info --title="Mises à jour" --text="Mise à jour en cous !!"
 #apt-get install zenity* -y 
 #aptitude install zenity* -y
 
-ban=$(echo "DanyAtomic est un programme vous permettant de formater des périfériques\n\n")
+ban=$(echo "DanyAtomic est un programme vous permettant de formater des périphériques\n\n")
 disk=$(echo "Liste des disques\n\n")
 #sdx="$(lsblk | grep sd)"
 a=$(echo "\n\nDéfinir la clef USB a formater, exemple\: sda")
@@ -46,7 +46,7 @@ i=$(expr $i + 1)
 }
 done < fic
 
-choix=$(zenity --list --title="Les differents périphériques de stockage" \
+choix=$(zenity --list --title="Les différents périphériques de stockage" \
 --column="Disques" \
 Disque_1 "${ta[1]}" \
 Disque_2 "${ta[2]}" \
@@ -62,7 +62,7 @@ then
 	echo $choix
 	if [[ $choix =~ ^sd[a-z] ]]
 	then
-		fic=$(zenity --entry --title="Systemes de fichiers" --text="Veuillez indiquer le système de fichier" ext4 fat32 ntfs)
+		fic=$(zenity --entry --title="Systèmes de fichiers" --text="Veuillez indiquer le système de fichier" ext4 fat32 ntfs)
 		if [ $? == 0 ]
 		then
 			case $fic in
@@ -91,7 +91,7 @@ then
 		fi
 	else
 		$erreur=$(zenity --error \
-	        	   --text "Attention erreur de syntax\nIndiquez une entrée valide sda,sdb,sdc....!"
+	        	   --text "Attention erreur de syntaxe\nIndiquez une entrée valide sda,sdb,sdc....!"
 	        	   exit 0)
 	fi
 else
